@@ -1,0 +1,44 @@
+/* Default Styles (Desktop First) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, main {
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Media Query for Tablets and Smaller (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Media Query for Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  header, nav, main {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+}
